@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.container {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    margin-top: 20px;
+}
+.title-box {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: white;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-birthday {
+    width: 55%;
+   
+}
+
+.form-group label {
+    margin-right: 10px;
+    width: 100px;
+}
+
+.genders {
+    display: flex;
+    align-items: center;
+}
+.genders .p {
+    display: flex;
+    gap: 10px;
+}
+.form-group select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
