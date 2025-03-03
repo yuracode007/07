@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Personal Info Form</title>
+    <title>Personal Info, Contacts & Car Info</title>
 </head>
-
 <body>
+    <h1>Home work for CSS flexbox</h1>
+    <div class="dd">
     <div class="container">
         <div class="title-box">Personal info</div>
         <form>
@@ -21,17 +22,17 @@
             </div>
             <div class="form-group">
                 <label for="birthday">Birthday</label>
-                <input class="input-birthday" type="date" id="birthday" name="birthday" placeholder="AAMM.FFFF. ---">
+                <input class="input-birthday" type="date" id="birthday" name="birthday">
             </div>
             <div class="form-group genders">
                 <label>Gender</label>
-                <div class="p">
+                <div class="gender-options">
                     <label><input type="radio" name="gender" value="male"> Male</label>
                     <label><input type="radio" name="gender" value="female"> Female</label>
                 </div>
             </div>
             <div class="form-group">
-                <p for="driveExperience">Drive experience</p>
+                <p>Drive experience</p>
                 <select class="group_select" id="driveExperience" name="driveExperience">
                     <option value="expert">---</option>
                     <option value="expert">expert more than 10</option>
@@ -42,6 +43,76 @@
             </div>
         </form>
     </div>
-</body>
 
+    <div class="contacts-container">
+        <div class="contacts-title">Contacts</div>
+        <form class="contacts-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <div class="car-info-container">
+        <div class="car-info-title">Car info</div>
+        <form class="car-info-form">
+            <div class="form-group">
+                <label for="brand">Brand</label>
+                <select id="brand" name="brand">
+                    <option value="">---</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="model">Model</label>
+                <select id="model" name="model">
+                    <option value="">---</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="used">Used</label>
+                <input type="checkbox" id="used" name="used">
+            </div>
+            <div class="form-group">
+                <p>Color</p>
+                <label><input type="radio" name="color" value="red"> Red</label>
+                <label><input type="radio" name="color" value="black"> Black</label>
+                <label><input type="radio" name="color" value="blue"> Blue</label>
+                <label><input type="radio" name="color" value="white"> White</label>
+                <label><input type="radio" name="color" value="grey"> Grey</label>
+            </div>
+            <div class="slider-container">
+                <label for="price">Price</label>
+                <br>
+                <input type="range" id="price" name="price" class="slider" min="10" max="80" step="10" value="40">
+                <div class="labels">
+                    <span>10</span>
+                    <span>20</span>
+                    <span>30</span>
+                    <span>40</span>
+                    <span>50</span>
+                    <span>60</span>
+                    <span>70</span>
+                    <span>80</span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="button-container">
+        <button type="button" class="cancel-button">Cancel</button>
+        <button type="submit" class="ok-button">Ok</button>
+    </div>
+</body>
 </html>

@@ -1,15 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
-.container {
+
+h1{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.dd{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 10px; 
+}
+
+.container, .contacts-container, .car-info-container {
     border: 1px solid #000;
     padding: 20px;
-    width: 300px;
+    width: 375px;
     position: relative;
     margin-top: 20px;
 }
-.title-box {
+
+.title-box, .contacts-title, .car-info-title {
     position: absolute;
     top: -10px;
     left: 10px;
@@ -18,32 +32,92 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
 .form-group {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     margin-bottom: 10px;
+}
+
+.form-group label, 
+.form-group p {
+    margin-right: 10px;
+    white-space: nowrap;
+    width: 100px;
 }
 
 .input-birthday {
     width: 55%;
-   
-}
-
-.form-group label {
-    margin-right: 10px;
-    width: 100px;
 }
 
 .genders {
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
-.genders .p {
+
+.gender-options {
     display: flex;
     gap: 10px;
+    flex-wrap: nowrap;
 }
-.form-group select {
-    width: 100%;
+
+.form-group select, .form-group input[type="range"] {
+    flex-grow: 1;
     padding: 5px;
     margin-top: 5px;
+    width: 100%;
 }
+
+.contacts-form .form-group, .car-info-form .form-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.contacts-form input, .contacts-form textarea {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.car-info-form .form-group input[type="checkbox"] {
+    width: auto;
+}
+
+.car-info-form .form-group input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 15px;
+}
+
+
+.cancel-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.ok-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.slider {
+    width: 40%;
+}
+
