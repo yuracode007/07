@@ -8,10 +8,12 @@
 </head>
 <body>
     <h1>Home work for CSS flexbox</h1>
-    <div class="dd">
-    <div class="container">
-        <div class="title-box">Personal info</div>
-        <form>
+    <form class="main-form">
+
+        <!-- Personal Info Section -->
+
+        <fieldset class="form-section">
+            <legend>Personal Info</legend>
             <div class="form-group">
                 <label for="firstName">First Name</label>
                 <input type="text" id="firstName" name="firstName">
@@ -22,31 +24,33 @@
             </div>
             <div class="form-group">
                 <label for="birthday">Birthday</label>
-                <input class="input-birthday" type="date" id="birthday" name="birthday">
+                <input type="date" id="birthday" name="birthday">
             </div>
             <div class="form-group genders">
                 <label>Gender</label>
                 <div class="gender-options">
-                    <label><input type="radio" name="gender" value="male"> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label>Male<input type="radio" name="gender" value="male"> </label>
+                    <label>Female<input type="radio" name="gender" value="female"></label>
                 </div>
             </div>
             <div class="form-group">
-                <p>Drive experience</p>
-                <select class="group_select" id="driveExperience" name="driveExperience">
-                    <option value="expert">---</option>
-                    <option value="expert">expert more than 10</option>
-                    <option value="5-10">5-10</option>
+                <label for="driveExperience">Drive experience</label>
+                <select id="driveExperience" name="driveExperience">
+                    <option value="">---</option>
+                    <option value="expert">expert </option>
+                    <option value="expert">more than 10 </option>
+                    <option value="5-10">5-10 </option>
                     <option value="2-5">2-5</option>
-                    <option value="less than 2">less than 2 beginner</option>
+                    <option value="less than 2">less than 2 years</option>
+                    <option value="less than 2"> beginner</option>
                 </select>
             </div>
-        </form>
-    </div>
+        </fieldset>
 
-    <div class="contacts-container">
-        <div class="contacts-title">Contacts</div>
-        <form class="contacts-form">
+        <!-- Contacts Section -->
+
+        <fieldset class="form-section">
+            <legend>Contacts</legend>
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email">
@@ -59,19 +63,15 @@
                 <label for="address">Address</label>
                 <textarea id="address" name="address"></textarea>
             </div>
-        </form>
-    </div>
+        </fieldset>
 
-    <div class="car-info-container">
-        <div class="car-info-title">Car info</div>
-        <form class="car-info-form">
+        <!-- Car Info Section -->
+        <fieldset class="form-section">
+            <legend>Car Info</legend>
             <div class="form-group">
                 <label for="brand">Brand</label>
                 <select id="brand" name="brand">
                     <option value="">---</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Audi">Audi</option>
                 </select>
             </div>
             <div class="form-group">
@@ -85,17 +85,18 @@
                 <input type="checkbox" id="used" name="used">
             </div>
             <div class="form-group">
-                <p>Color</p>
-                <label><input type="radio" name="color" value="red"> Red</label>
-                <label><input type="radio" name="color" value="black"> Black</label>
-                <label><input type="radio" name="color" value="blue"> Blue</label>
-                <label><input type="radio" name="color" value="white"> White</label>
-                <label><input type="radio" name="color" value="grey"> Grey</label>
+                <div class="color-options">
+                    <label>Red<input type="radio" name="color" value="red"> </label>
+                    <label>Black<input type="radio" name="color" value="black"> </label>
+                    <label>Blue<input type="radio" name="color" value="blue"> </label>
+                    <label>White<input type="radio" name="color" value="white"> </label>
+                    <label>Grey<input type="radio" name="color" value="grey"> </label>
+                </div>
             </div>
-            <div class="slider-container">
+            <div class="form-group">
                 <label for="price">Price</label>
-                <br>
-                <input type="range" id="price" name="price" class="slider" min="10" max="80" step="10" value="40">
+                <div class="div">
+                <input type="range" id="price" name="price" min="10" max="80" step="10" value="40">
                 <div class="labels">
                     <span>10</span>
                     <span>20</span>
@@ -107,12 +108,12 @@
                     <span>80</span>
                 </div>
             </div>
-        </form>
-    </div>
-</div>
+            </div>
+        </fieldset>
+    </form>
     <div class="button-container">
-        <button type="button" class="cancel-button">Cancel</button>
-        <button type="submit" class="ok-button">Ok</button>
+        <button type="reset" class="cancel-button">Cancel</button>
+        <button type="submit" class="ok-button">OK</button>
     </div>
 </body>
 </html>
