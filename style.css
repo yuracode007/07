@@ -13,13 +13,6 @@ h1{
 }
 
 
-textarea{
-    margin-top: 20px;
-    width: 50%;
-    height: 50%;
-    height: 50px;
-}
-
 .main-form{
     display: flex;
     gap: 10px;
@@ -61,19 +54,29 @@ legend{
 
 /* Contacts */
 
-textarea{
-    width: 50%;
-    width: 50%;
-}
-
-#email,
-#phone,
-#address {
-    margin-left: 15px;
+.add{
+    display: flex;
     
 }
 
+textarea {
+    height: 25px; 
+    width: 175px;
+}
+
+#address{
+    margin-left: 18px;
+}
+
+#email {
+    margin-left: 32px;
+}
+#phone{
+    margin-left: 26px;
+
+}
 /* Car Info */
+
 
 #brand,
 #model {
