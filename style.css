@@ -89,63 +89,19 @@ textarea {
 }
 
 #price{
-    width: 57%;
+    width: 56%;
 }
 
 
+.form-group-input-price input{
+    width: 56%;
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#money{
+    display: flex;
+   
+}
 
 
 .button-container{

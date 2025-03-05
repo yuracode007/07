@@ -95,19 +95,30 @@
             </div>
             <div class="form-group">
                 <label for="price">Price</label>
-                <div class="div">
-                <input type="range" id="price" name="price" min="10" max="80" step="10" value="40">
-                <div class="labels">
-                    <span>10</span>
-                    <span>20</span>
-                    <span>30</span>
-                    <span>40</span>
-                    <span>50</span>
-                    <span>60</span>
-                    <span>70</span>
-                    <span>80</span>
-                </div>
-            </div>
+                <div class="form-group-input-price">
+                    <input
+                      type="range"
+                      name="price"
+                      id="car-price"
+                      min="10"
+                      max="80"
+                      step="10"
+                      value="50"
+                      list="money"
+                    />
+                  </div>
+                  <div>
+                    <datalist id="money">
+                      <option value="10" label="10">10</option>
+                      <option value="20" label="20">20</option>
+                      <option value="30" label="30">30</option>
+                      <option value="40" label="40">40</option>
+                      <option value="50" label="50">50</option>
+                      <option value="60" label="60">60</option>
+                      <option value="70" label="70">70</option>
+                      <option value="80" label="80">80</option>
+                    </datalist>
+                  </div>
             </div>
         </fieldset>
     </form>
